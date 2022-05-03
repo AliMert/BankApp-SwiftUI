@@ -19,8 +19,8 @@ struct HomeView: View {
     
     private let cards: [Card] = [
         Card(name: "Ali Mert", cardNumber: "4345 5687 7867 0978", cardImage: "Card1"),
-        Card(name: "Jenna", cardNumber: "5687 4345 7867 5687", cardImage: "Card2"),
-        Card(name: "Jessica", cardNumber: "7867 4345 5687 7867", cardImage: "Card3")
+        Card(name: "William", cardNumber: "5687 4345 7867 5687", cardImage: "Card2"),
+        Card(name: "Calvin", cardNumber: "7867 4345 5687 7867", cardImage: "Card3")
     ]
     
     var body: some View {
@@ -57,17 +57,19 @@ struct HomeView: View {
                 VStack(spacing: .zero) {
                     // MARK: Cards
                     ForEach(cards.indices) { index in
+                        let card = cards[index]
+
                         GeometryReader { geometry in
                             let rect = geometry.frame(in: .named("SCROLL"))
                             // display some portion of each Card
                             let offset =  CGFloat(index) * (expandCards ? 10 : 70)
                             Group {
-                                if currentCard?.id == cards[index].id && showDetailCard {
-                                    CardView(with: cards[index])
+                                if currentCard?.id == card.id && showDetailCard {
+                                    CardView(with: card)
                                         .opacity(0)
                                 } else {
-                                    CardView(with: cards[index])
-                                        .matchedGeometryEffect(id: cards[index].id, in: animation)
+                                    CardView(with: card)
+                                        .matchedGeometryEffect(id: card.id, in: animation)
                                 }
                             }
                             .hCenter()
@@ -75,7 +77,7 @@ struct HomeView: View {
                             .offset(y: expandCards ? offset : -rect.minY + offset)
                             .onTapGesture {
                                 withAnimation(.easeInOut(duration: 0.35)) {
-                                    currentCard = cards[index]
+                                    currentCard = card
                                     showDetailCard = true
                                 }
                             }
@@ -130,7 +132,6 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
-//            .preferredColorScheme(.dark)
 
         HomeView()
             .preferredColorScheme(.dark)

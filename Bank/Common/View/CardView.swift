@@ -29,7 +29,7 @@ struct CardView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .shadow(color: Color(UIColor.label), radius: 0.5, x: 0.5, y: -0.5)
-//                .padding([.top], 5)
+                .padding(3)
                 
             // Card Deatils
             VStack(alignment: .leading, spacing: 10) {
