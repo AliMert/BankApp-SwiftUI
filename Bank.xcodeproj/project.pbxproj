@@ -12,7 +12,7 @@
 		E17AAC082820723D00F159C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E17AAC072820723D00F159C7 /* Assets.xcassets */; };
 		E17AAC0B2820723D00F159C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E17AAC0A2820723D00F159C7 /* Preview Assets.xcassets */; };
 		E17AAC12282072B100F159C7 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17AAC11282072B100F159C7 /* View+Extensions.swift */; };
-		E17AAC162820780C00F159C7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17AAC152820780C00F159C7 /* HomeView.swift */; };
+		E17AAC162820780C00F159C7 /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17AAC152820780C00F159C7 /* WalletView.swift */; };
 		E17AAC182820781E00F159C7 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17AAC172820781E00F159C7 /* Card.swift */; };
 		E1E8239B282135F7004F1BD6 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E8239A282135F7004F1BD6 /* CardView.swift */; };
 		E1E8239D28213C1D004F1BD6 /* CardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E8239C28213C1D004F1BD6 /* CardDetailView.swift */; };
@@ -29,7 +29,7 @@
 		E17AAC072820723D00F159C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E17AAC0A2820723D00F159C7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E17AAC11282072B100F159C7 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
-		E17AAC152820780C00F159C7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E17AAC152820780C00F159C7 /* WalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletView.swift; sourceTree = "<group>"; };
 		E17AAC172820781E00F159C7 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		E1E8239A282135F7004F1BD6 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		E1E8239C28213C1D004F1BD6 /* CardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailView.swift; sourceTree = "<group>"; };
@@ -106,18 +106,18 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		E1E8239E28213CA2004F1BD6 /* Home */ = {
+		E1E8239E28213CA2004F1BD6 /* Wallet */ = {
 			isa = PBXGroup;
 			children = (
 				E1E823A028213CC3004F1BD6 /* View */,
 			);
-			path = Home;
+			path = Wallet;
 			sourceTree = "<group>";
 		};
 		E1E823A028213CC3004F1BD6 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E17AAC152820780C00F159C7 /* HomeView.swift */,
+				E17AAC152820780C00F159C7 /* WalletView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -167,7 +167,7 @@
 		E1E823A828213DB1004F1BD6 /* SubModules */ = {
 			isa = PBXGroup;
 			children = (
-				E1E8239E28213CA2004F1BD6 /* Home */,
+				E1E8239E28213CA2004F1BD6 /* Wallet */,
 				E1E823A128213CE0004F1BD6 /* CardDetail */,
 			);
 			path = SubModules;
@@ -269,7 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E17AAC062820723900F159C7 /* ContentView.swift in Sources */,
-				E17AAC162820780C00F159C7 /* HomeView.swift in Sources */,
+				E17AAC162820780C00F159C7 /* WalletView.swift in Sources */,
 				E17AAC182820781E00F159C7 /* Card.swift in Sources */,
 				E1E8239D28213C1D004F1BD6 /* CardDetailView.swift in Sources */,
 				E1E823B228217A41004F1BD6 /* ExpenseView.swift in Sources */,

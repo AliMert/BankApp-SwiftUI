@@ -1,5 +1,5 @@
 //
-//  HomeView.swift
+//  WalletView.swift
 //  Bank
 //
 //  Created by Ali Mert Özhayta on 2.05.2022.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HomeView: View {
+struct WalletView: View {
     
     // MARK: Animation Properties
     @State var expandCards: Bool = false
@@ -18,9 +18,9 @@ struct HomeView: View {
     @Namespace var animation
     
     private let cards: [Card] = [
-        Card(name: "Ali Mert", cardNumber: "4345 5687 7867 0978", cardImage: "Card1"),
-        Card(name: "William", cardNumber: "5687 4345 7867 5687", cardImage: "Card2"),
-        Card(name: "Calvin", cardNumber: "7867 4345 5687 7867", cardImage: "Card3")
+        Card(name: "William", cardNumber: "4345 5687 7867 0978", cardImage: "Card1"),
+        Card(name: "Calvin", cardNumber: "5687 4345 7867 5687", cardImage: "Card2"),
+        Card(name: "Ali Mert", cardNumber: "7867 4345 5687 7867", cardImage: "Card3")
     ]
     
     var body: some View {
@@ -60,7 +60,7 @@ struct HomeView: View {
                         let card = cards[index]
 
                         GeometryReader { geometry in
-                            let rect = geometry.frame(in: .named("SCROLL"))
+                            let rect = geometry.frame(in: .named("WalletView-ScrollView"))
                             // display some portion of each Card
                             let offset =  CGFloat(index) * (expandCards ? 10 : 70)
                             Group {
@@ -97,7 +97,7 @@ struct HomeView: View {
                         }
                 }
             }
-            .coordinateSpace(name: "SCROLL")
+            .coordinateSpace(name: "WalletView-ScrollView")
             .offset(y: expandCards ? 0 : 30)
             
             // MARK: Add Button
@@ -129,11 +129,11 @@ struct HomeView: View {
     }
 }
 
-struct HomeView_Previews: PreviewProvider {
+struct WalletView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        WalletView()
 
-        HomeView()
+        WalletView()
             .preferredColorScheme(.dark)
             .previewInterfaceOrientation(.landscapeLeft)
     }
