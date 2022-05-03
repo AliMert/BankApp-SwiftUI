@@ -13,5 +13,3 @@ struct Card: Identifiable {
     var cardNumber: String
     var cardImage: String
 }
-
-

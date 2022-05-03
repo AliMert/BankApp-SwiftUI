@@ -14,6 +14,10 @@
 		E17AAC12282072B100F159C7 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17AAC11282072B100F159C7 /* View+Extensions.swift */; };
 		E17AAC162820780C00F159C7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17AAC152820780C00F159C7 /* HomeView.swift */; };
 		E17AAC182820781E00F159C7 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17AAC172820781E00F159C7 /* Card.swift */; };
+		E1E8239B282135F7004F1BD6 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E8239A282135F7004F1BD6 /* CardView.swift */; };
+		E1E8239D28213C1D004F1BD6 /* CardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E8239C28213C1D004F1BD6 /* CardDetailView.swift */; };
+		E1E823A528213D2F004F1BD6 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E823A428213D2F004F1BD6 /* String+Extensions.swift */; };
+		E1E823AC28213F6F004F1BD6 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E823AB28213F6F004F1BD6 /* MockData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +29,10 @@
 		E17AAC11282072B100F159C7 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		E17AAC152820780C00F159C7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E17AAC172820781E00F159C7 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		E1E8239A282135F7004F1BD6 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		E1E8239C28213C1D004F1BD6 /* CardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailView.swift; sourceTree = "<group>"; };
+		E1E823A428213D2F004F1BD6 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		E1E823AB28213F6F004F1BD6 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,11 +65,10 @@
 		E17AAC022820723900F159C7 /* Bank */ = {
 			isa = PBXGroup;
 			children = (
-				E17AAC14282077FB00F159C7 /* Model */,
-				E17AAC132820779900F159C7 /* View */,
-				E17AAC11282072B100F159C7 /* View+Extensions.swift */,
+				E1E823A728213D83004F1BD6 /* App */,
 				E17AAC032820723900F159C7 /* BankApp.swift */,
-				E17AAC052820723900F159C7 /* ContentView.swift */,
+				E1E823A228213D12004F1BD6 /* Common */,
+				E17AAC132820779900F159C7 /* Module */,
 				E17AAC072820723D00F159C7 /* Assets.xcassets */,
 				E17AAC092820723D00F159C7 /* Preview Content */,
 			);
@@ -71,17 +78,20 @@
 		E17AAC092820723D00F159C7 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				E1E823AB28213F6F004F1BD6 /* MockData.swift */,
 				E17AAC0A2820723D00F159C7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		E17AAC132820779900F159C7 /* View */ = {
+		E17AAC132820779900F159C7 /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				E17AAC152820780C00F159C7 /* HomeView.swift */,
+				E17AAC14282077FB00F159C7 /* Model */,
+				E1E823A628213D77004F1BD6 /* View */,
+				E1E823A828213DB1004F1BD6 /* SubModules */,
 			);
-			path = View;
+			path = Module;
 			sourceTree = "<group>";
 		};
 		E17AAC14282077FB00F159C7 /* Model */ = {
@@ -90,6 +100,80 @@
 				E17AAC172820781E00F159C7 /* Card.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		E1E8239E28213CA2004F1BD6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E1E823A028213CC3004F1BD6 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E1E823A028213CC3004F1BD6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E17AAC152820780C00F159C7 /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E1E823A128213CE0004F1BD6 /* CardDetail */ = {
+			isa = PBXGroup;
+			children = (
+				E1E8239C28213C1D004F1BD6 /* CardDetailView.swift */,
+			);
+			path = CardDetail;
+			sourceTree = "<group>";
+		};
+		E1E823A228213D12004F1BD6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E1E823A928213DDB004F1BD6 /* View */,
+				E1E823A328213D1A004F1BD6 /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E1E823A328213D1A004F1BD6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E17AAC11282072B100F159C7 /* View+Extensions.swift */,
+				E1E823A428213D2F004F1BD6 /* String+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E1E823A628213D77004F1BD6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E17AAC052820723900F159C7 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E1E823A728213D83004F1BD6 /* App */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E1E823A828213DB1004F1BD6 /* SubModules */ = {
+			isa = PBXGroup;
+			children = (
+				E1E8239E28213CA2004F1BD6 /* Home */,
+				E1E823A128213CE0004F1BD6 /* CardDetail */,
+			);
+			path = SubModules;
+			sourceTree = "<group>";
+		};
+		E1E823A928213DDB004F1BD6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E1E8239A282135F7004F1BD6 /* CardView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,7 +249,11 @@
 				E17AAC062820723900F159C7 /* ContentView.swift in Sources */,
 				E17AAC162820780C00F159C7 /* HomeView.swift in Sources */,
 				E17AAC182820781E00F159C7 /* Card.swift in Sources */,
+				E1E8239D28213C1D004F1BD6 /* CardDetailView.swift in Sources */,
+				E1E823AC28213F6F004F1BD6 /* MockData.swift in Sources */,
+				E1E823A528213D2F004F1BD6 /* String+Extensions.swift in Sources */,
 				E17AAC12282072B100F159C7 /* View+Extensions.swift in Sources */,
+				E1E8239B282135F7004F1BD6 /* CardView.swift in Sources */,
 				E17AAC042820723900F159C7 /* BankApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
