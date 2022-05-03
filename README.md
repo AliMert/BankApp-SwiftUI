@@ -39,7 +39,7 @@ A SwiftUI demo project.
 </th>
   </tr>
   <tr>
-     <td colspan="3"> ![ ](screenshots/demo.mp4) </td>
+     <td colspan="3"> ![Demo Link](screenshots/demo.mp4) </td>
   </tr>
 </tbody>
 </table>
