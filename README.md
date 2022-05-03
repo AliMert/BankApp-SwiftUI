@@ -5,7 +5,7 @@ A SwiftUI demo project.
 <table>
 <thead>
    <tr>
-        <th colspan="2"><div align="center">Screenshots</div></th>
+        <th colspan="3"><div align="center">Screenshots</div></th>
   </tr>
 </thead>
 <tbody>
@@ -32,14 +32,14 @@ A SwiftUI demo project.
      </td>
   </tr>
   <tr> 
-     <th colspan="2">
+     <th colspan="3">
      <div align="center">
         <b>Demo</b>
 </div>
 </th>
   </tr>
   <tr>
-     <td> <video src="screenshots/demo.mp4" width="200"> </td>
+     <td colspan="3"> ![ ](screenshots/demo.mp4) </td>
   </tr>
 </tbody>
 </table>
