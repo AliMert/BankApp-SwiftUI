@@ -81,7 +81,7 @@ struct CardDetailView: View {
 
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         .background(
-            Color("BG").ignoresSafeArea()
+            Color("Wallet Detail BG").ignoresSafeArea()
         )
         .onAppear {
             withAnimation(.easeOut.delay(0.1)) {

@@ -8,8 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    init() {
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
+        UINavigationBar.appearance().shadowImage = UIImage()
+    }
     var body: some View {
-        WalletView()
+        
+        NavigationView {
+            WalletView()
+                .navigationBarHidden(true)
+
+        }
+        .navigationViewStyle(.stack)
+        .accentColor(Color(UIColor.label))
     }
 }
 

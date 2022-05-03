@@ -17,6 +17,9 @@ struct WalletView: View {
     @State var showDetailCard: Bool = false
     @Namespace var animation
     
+    @State var goToAddCardView = false
+
+    
     private let cards: [Card] = [
         Card(name: "William", cardNumber: "4345 5687 7867 0978", cardImage: "Card1"),
         Card(name: "Calvin", cardNumber: "5687 4345 7867 5687", cardImage: "Card2"),
@@ -101,19 +104,23 @@ struct WalletView: View {
             .offset(y: expandCards ? 0 : 30)
             
             // MARK: Add Button
-            Button {
-            } label: {
-                Image(systemName: "plus")
-                    .font(.title)
-                    .foregroundColor(.white)
-                    .padding(20)
-                    .background(.blue, in: Circle())
+            NavigationLink(destination: AddCardView(), isActive: $goToAddCardView) {
+                Button {
+                    goToAddCardView = true
+                } label: {
+                    Image(systemName: "plus")
+                        .font(.title)
+                        .foregroundColor(.white)
+                        .padding(20)
+                        .background(.blue, in: Circle())
+                }
             }
             .rotationEffect(.init(degrees: expandCards ? 180 : .zero))
             .scaleEffect(expandCards ? 0.01 : 1) // 0.01 -> To Avoid Debug Warning Log
             .opacity(expandCards ? 0 : 1)
             .frame(height: expandCards ? 0 : nil)
             .padding(.bottom, expandCards ? 0 : 30)
+            .navigationBarTitle("", displayMode: .inline)
         }
         .padding([.horizontal, .top])
         .frame(maxWidth: .infinity, maxHeight: .infinity)

@@ -20,6 +20,9 @@
 		E1E823AC28213F6F004F1BD6 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E823AB28213F6F004F1BD6 /* MockData.swift */; };
 		E1E823B02821795C004F1BD6 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E823AF2821795B004F1BD6 /* Expense.swift */; };
 		E1E823B228217A41004F1BD6 /* ExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E823B128217A41004F1BD6 /* ExpenseView.swift */; };
+		E1E823B92821C728004F1BD6 /* ColorGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E823B82821C728004F1BD6 /* ColorGrid.swift */; };
+		E1E823BB2821C7BC004F1BD6 /* AddCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E823BA2821C7BC004F1BD6 /* AddCardView.swift */; };
+		E1E823BD2821E73E004F1BD6 /* CustomCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E823BC2821E73D004F1BD6 /* CustomCorner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		E1E823AB28213F6F004F1BD6 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		E1E823AF2821795B004F1BD6 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 		E1E823B128217A41004F1BD6 /* ExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseView.swift; sourceTree = "<group>"; };
+		E1E823B82821C728004F1BD6 /* ColorGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorGrid.swift; sourceTree = "<group>"; };
+		E1E823BA2821C7BC004F1BD6 /* AddCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardView.swift; sourceTree = "<group>"; };
+		E1E823BC2821E73D004F1BD6 /* CustomCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				E1E823A028213CC3004F1BD6 /* View */,
+				E1E823B52821C6A0004F1BD6 /* SubModules */,
 			);
 			path = Wallet;
 			sourceTree = "<group>";
@@ -168,7 +175,6 @@
 			isa = PBXGroup;
 			children = (
 				E1E8239E28213CA2004F1BD6 /* Wallet */,
-				E1E823A128213CE0004F1BD6 /* CardDetail */,
 			);
 			path = SubModules;
 			sourceTree = "<group>";
@@ -196,6 +202,41 @@
 				E1E823AF2821795B004F1BD6 /* Expense.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		E1E823B42821C672004F1BD6 /* AddCard */ = {
+			isa = PBXGroup;
+			children = (
+				E1E823B62821C710004F1BD6 /* Model */,
+				E1E823B72821C716004F1BD6 /* View */,
+			);
+			path = AddCard;
+			sourceTree = "<group>";
+		};
+		E1E823B52821C6A0004F1BD6 /* SubModules */ = {
+			isa = PBXGroup;
+			children = (
+				E1E823B42821C672004F1BD6 /* AddCard */,
+				E1E823A128213CE0004F1BD6 /* CardDetail */,
+			);
+			path = SubModules;
+			sourceTree = "<group>";
+		};
+		E1E823B62821C710004F1BD6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E1E823B82821C728004F1BD6 /* ColorGrid.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E1E823B72821C716004F1BD6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E1E823BA2821C7BC004F1BD6 /* AddCardView.swift */,
+				E1E823BC2821E73D004F1BD6 /* CustomCorner.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,12 +312,15 @@
 				E17AAC062820723900F159C7 /* ContentView.swift in Sources */,
 				E17AAC162820780C00F159C7 /* WalletView.swift in Sources */,
 				E17AAC182820781E00F159C7 /* Card.swift in Sources */,
+				E1E823B92821C728004F1BD6 /* ColorGrid.swift in Sources */,
 				E1E8239D28213C1D004F1BD6 /* CardDetailView.swift in Sources */,
 				E1E823B228217A41004F1BD6 /* ExpenseView.swift in Sources */,
 				E1E823B02821795C004F1BD6 /* Expense.swift in Sources */,
+				E1E823BB2821C7BC004F1BD6 /* AddCardView.swift in Sources */,
 				E1E823AC28213F6F004F1BD6 /* MockData.swift in Sources */,
 				E1E823A528213D2F004F1BD6 /* String+Extensions.swift in Sources */,
 				E17AAC12282072B100F159C7 /* View+Extensions.swift in Sources */,
+				E1E823BD2821E73E004F1BD6 /* CustomCorner.swift in Sources */,
 				E1E8239B282135F7004F1BD6 /* CardView.swift in Sources */,
 				E17AAC042820723900F159C7 /* BankApp.swift in Sources */,
 			);
