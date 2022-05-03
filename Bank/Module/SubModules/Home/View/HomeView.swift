@@ -119,10 +119,9 @@ struct HomeView: View {
             if let currentCard = currentCard, showDetailCard {
                 CardDetailView(
                     currentCard: currentCard,
-                    showDetail: $showDetailCard,
+                    showDetailCard: $showDetailCard,
                     animation: animation
                 )
-                    .padding(.horizontal)
             }
         }
     }
