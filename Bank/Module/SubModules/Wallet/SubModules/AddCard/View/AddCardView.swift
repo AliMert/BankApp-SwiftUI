@@ -11,7 +11,7 @@ struct AddCardView: View {
     
     // MARK: Animation Properties
     // Instead of making each boolean for separate animation making it as a array to avoid multiple lines of code.
-    @State var animations: [Bool] = Array(repeating: false, count: 10)
+    @State private var animations: [Bool] = Array(repeating: false, count: 10)
     
     // MARK: Sample Colors
     @State private var colors: [ColorGrid] = [
@@ -25,8 +25,17 @@ struct AddCardView: View {
     
     var body: some View {
         VStack {
-           CreditCard()
-            
+
+            GeometryReader { proxy in
+
+                let maxY = proxy.frame(in: .global).maxY
+
+                CreditCard()
+                    .hCenter()
+                    .offset(y: animations[0] ? 0 : -maxY)
+            }
+            .frame(maxHeight: 200)
+
             HStack {
                 Text("Choose a color")
                     .font(.title3)
