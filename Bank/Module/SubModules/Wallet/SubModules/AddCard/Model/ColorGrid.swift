@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ColorGrid: Identifiable {
+    static let width: CGFloat = 120
+    static let height: CGFloat = 65
+
     let id = UUID().uuidString
     let hexValue: String
     let color: Color
