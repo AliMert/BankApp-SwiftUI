@@ -115,7 +115,7 @@ struct AddCardView: View {
 
                     LazyVGrid(columns: columns, spacing: 15) {
                         ForEach(colors) { colorGrid in
-                            ColorGridCardView(
+                            GridColoredCardView(
                                 colorGrid: colorGrid,
                                 selectedColor: $selectedColor,
                                 colors: $colors,

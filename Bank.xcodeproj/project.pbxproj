@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E172A09F28231EC10086FD09 /* CreditCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E172A09E28231EC10086FD09 /* CreditCardView.swift */; };
-		E172A0A128233A880086FD09 /* ColorGridCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E172A0A028233A880086FD09 /* ColorGridCardView.swift */; };
+		E172A0A128233A880086FD09 /* GridColoredCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E172A0A028233A880086FD09 /* GridColoredCardView.swift */; };
 		E17AAC042820723900F159C7 /* BankApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17AAC032820723900F159C7 /* BankApp.swift */; };
 		E17AAC062820723900F159C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17AAC052820723900F159C7 /* ContentView.swift */; };
 		E17AAC082820723D00F159C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E17AAC072820723D00F159C7 /* Assets.xcassets */; };
@@ -29,7 +29,7 @@
 
 /* Begin PBXFileReference section */
 		E172A09E28231EC10086FD09 /* CreditCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardView.swift; sourceTree = "<group>"; };
-		E172A0A028233A880086FD09 /* ColorGridCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorGridCardView.swift; sourceTree = "<group>"; };
+		E172A0A028233A880086FD09 /* GridColoredCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridColoredCardView.swift; sourceTree = "<group>"; };
 		E17AAC002820723900F159C7 /* Bank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E17AAC032820723900F159C7 /* BankApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankApp.swift; sourceTree = "<group>"; };
 		E17AAC052820723900F159C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -238,7 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				E1E823BA2821C7BC004F1BD6 /* AddCardView.swift */,
-				E172A0A028233A880086FD09 /* ColorGridCardView.swift */,
+				E172A0A028233A880086FD09 /* GridColoredCardView.swift */,
 				E1E823BC2821E73D004F1BD6 /* CustomCorner.swift */,
 				E172A09E28231EC10086FD09 /* CreditCardView.swift */,
 			);
@@ -327,7 +327,7 @@
 				E1E823AC28213F6F004F1BD6 /* MockData.swift in Sources */,
 				E1E823A528213D2F004F1BD6 /* String+Extensions.swift in Sources */,
 				E17AAC12282072B100F159C7 /* View+Extensions.swift in Sources */,
-				E172A0A128233A880086FD09 /* ColorGridCardView.swift in Sources */,
+				E172A0A128233A880086FD09 /* GridColoredCardView.swift in Sources */,
 				E1E823BD2821E73E004F1BD6 /* CustomCorner.swift in Sources */,
 				E1E8239B282135F7004F1BD6 /* CardView.swift in Sources */,
 				E17AAC042820723900F159C7 /* BankApp.swift in Sources */,

@@ -1,5 +1,5 @@
 //
-//  ColorGridCardView.swift
+//  GridColoredCardView.swift
 //  Bank
 //
 //  Created by Ali Mert Özhayta on 5.05.2022.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ColorGridCardView: View {
+struct GridColoredCardView: View {
 
     private let colorGrid: ColorGrid
     @Binding var selectedColor: Color
@@ -69,9 +69,28 @@ struct ColorGridCardView: View {
         }
     }
 }
-//
-//struct ColorGridCardView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ColorGridCardView()
-//    }
-//}
+
+struct GridColoredCardView_Previews: PreviewProvider {
+    @Namespace private static var animation: Namespace.ID
+    static private let colorGrid: ColorGrid = ColorGrid(
+        hexValue: "#FB3272",
+        color: Color("Orange"),
+        rotateCards: true,
+        addToGrid: true,
+        showText: true,
+        removeFromView: true
+    )
+    static private let colors: [ColorGrid] = [
+        colorGrid
+    ]
+
+    static var previews: some View {
+        GridColoredCardView(
+            colorGrid: colorGrid,
+            selectedColor: .constant(colors[0].color),
+            colors: .constant(colors),
+            animation: animation
+        )
+            .preferredColorScheme(.dark)
+    }
+}
