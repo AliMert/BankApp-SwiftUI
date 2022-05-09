@@ -5,7 +5,7 @@ A SwiftUI demo project.
 <table>
 <thead>
    <tr>
-        <th colspan="3"><div align="center">Screenshots</div></th>
+        <th colspan="4"><div align="center">Screenshots</div></th>
   </tr>
 </thead>
 <tbody>
@@ -19,6 +19,9 @@ A SwiftUI demo project.
         <td>
          <img src="screenshots/light3.png" width="200">
      </td>
+      <td>
+         <img src="screenshots/light4.png" width="200">
+     </td>
   </tr>
    <tr>
         <td>
@@ -30,9 +33,12 @@ A SwiftUI demo project.
         <td>
          <img src="screenshots/dark3.png" width="200">
      </td>
+             <td>
+         <img src="screenshots/dark4.png" width="200">
+     </td>
   </tr>
   <tr> 
-     <th colspan="3">
+     <th colspan="4">
      <div align="center">
         <b>Demo</b>
 </div>
