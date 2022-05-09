@@ -58,7 +58,7 @@ struct CardDetailView: View {
                     VStack(spacing: 20) {
                         
                         // Expenses
-                        ForEach(expenses.indices) { index in
+                        ForEach(expenses.indices, id: \.self) { index in
                             ExpenseView(
                                 expense: expenses[index],
                                 index: index,
@@ -70,8 +70,8 @@ struct CardDetailView: View {
                 }
                 .frame(maxWidth: .infinity)
                 .background {
-                    Color(UIColor.systemBackground).clipShape(RoundedRectangle(cornerRadius: 25, style: .continuous))
-                        .ignoresSafeArea()
+                    Color(UIColor.systemBackground)
+                        .clipShape(CustomCorner(corners: [.topLeft, .topRight], radius: 25))
                 }
                 .offset(y: showExpenseView ? .zero : height)
             }

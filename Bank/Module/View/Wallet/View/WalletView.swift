@@ -59,7 +59,7 @@ struct WalletView: View {
                 
                 VStack(spacing: .zero) {
                     // MARK: Cards
-                    ForEach(cards.indices) { index in
+                    ForEach(cards.indices, id:\.self) { index in
                         let card = cards[index]
 
                         GeometryReader { geometry in
@@ -92,7 +92,8 @@ struct WalletView: View {
                 .overlay {
                     // To avoid scrolling
                     Rectangle()
-                        .fill(.black.opacity(expandCards ? 0 : 0.01))
+                        // if the fill color is clear, tap gesture wont work -> Fixed by setting it to 0.001
+                        .fill(.black.opacity(expandCards ? 0 : 0.001))
                         .onTapGesture {
                             withAnimation(.easeInOut(duration: 0.35)) {
                                 expandCards = true
@@ -113,14 +114,17 @@ struct WalletView: View {
                         .foregroundColor(.white)
                         .padding(20)
                         .background(.blue, in: Circle())
+                        .rotationEffect(.init(degrees: expandCards ? 180 : .zero))
+                        .scaleEffect(expandCards ? 0.01 : 1) // 0.01 -> To Avoid Debug Warning Log
+                        .opacity(expandCards ? 0 : 1)
+                        .frame(height: expandCards ? 0 : nil)
+                        .padding(.bottom, expandCards ? 0 : 30)
                 }
             }
-            .rotationEffect(.init(degrees: expandCards ? 180 : .zero))
-            .scaleEffect(expandCards ? 0.01 : 1) // 0.01 -> To Avoid Debug Warning Log
-            .opacity(expandCards ? 0 : 1)
-            .frame(height: expandCards ? 0 : nil)
-            .padding(.bottom, expandCards ? 0 : 30)
             .navigationBarTitle("", displayMode: .inline)
+        }
+        .background {
+            Color.black.opacity(expandCards ? 0 : 0.01)
         }
         .padding([.horizontal, .top])
         .frame(maxWidth: .infinity, maxHeight: .infinity)

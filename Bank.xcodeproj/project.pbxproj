@@ -16,6 +16,7 @@
 		E17AAC12282072B100F159C7 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17AAC11282072B100F159C7 /* View+Extensions.swift */; };
 		E17AAC162820780C00F159C7 /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17AAC152820780C00F159C7 /* WalletView.swift */; };
 		E17AAC182820781E00F159C7 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17AAC172820781E00F159C7 /* Card.swift */; };
+		E18F41FB282946890057864C /* DebtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18F41FA282946890057864C /* DebtView.swift */; };
 		E1E8239B282135F7004F1BD6 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E8239A282135F7004F1BD6 /* CardView.swift */; };
 		E1E8239D28213C1D004F1BD6 /* CardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E8239C28213C1D004F1BD6 /* CardDetailView.swift */; };
 		E1E823A528213D2F004F1BD6 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E823A428213D2F004F1BD6 /* String+Extensions.swift */; };
@@ -38,6 +39,7 @@
 		E17AAC11282072B100F159C7 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		E17AAC152820780C00F159C7 /* WalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletView.swift; sourceTree = "<group>"; };
 		E17AAC172820781E00F159C7 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		E18F41FA282946890057864C /* DebtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebtView.swift; sourceTree = "<group>"; };
 		E1E8239A282135F7004F1BD6 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		E1E8239C28213C1D004F1BD6 /* CardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailView.swift; sourceTree = "<group>"; };
 		E1E823A428213D2F004F1BD6 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
@@ -102,7 +104,6 @@
 			children = (
 				E17AAC14282077FB00F159C7 /* Model */,
 				E1E823A628213D77004F1BD6 /* View */,
-				E1E823A828213DB1004F1BD6 /* SubModules */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -113,6 +114,14 @@
 				E17AAC172820781E00F159C7 /* Card.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		E18F41F92829467E0057864C /* Debt */ = {
+			isa = PBXGroup;
+			children = (
+				E18F41FA282946890057864C /* DebtView.swift */,
+			);
+			path = Debt;
 			sourceTree = "<group>";
 		};
 		E1E8239E28213CA2004F1BD6 /* Wallet */ = {
@@ -162,7 +171,8 @@
 		E1E823A628213D77004F1BD6 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E17AAC052820723900F159C7 /* ContentView.swift */,
+				E18F41F92829467E0057864C /* Debt */,
+				E1E8239E28213CA2004F1BD6 /* Wallet */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -171,16 +181,9 @@
 			isa = PBXGroup;
 			children = (
 				E17AAC032820723900F159C7 /* BankApp.swift */,
+				E17AAC052820723900F159C7 /* ContentView.swift */,
 			);
 			path = App;
-			sourceTree = "<group>";
-		};
-		E1E823A828213DB1004F1BD6 /* SubModules */ = {
-			isa = PBXGroup;
-			children = (
-				E1E8239E28213CA2004F1BD6 /* Wallet */,
-			);
-			path = SubModules;
 			sourceTree = "<group>";
 		};
 		E1E823A928213DDB004F1BD6 /* View */ = {
@@ -317,6 +320,7 @@
 			files = (
 				E17AAC062820723900F159C7 /* ContentView.swift in Sources */,
 				E17AAC162820780C00F159C7 /* WalletView.swift in Sources */,
+				E18F41FB282946890057864C /* DebtView.swift in Sources */,
 				E17AAC182820781E00F159C7 /* Card.swift in Sources */,
 				E1E823B92821C728004F1BD6 /* ColorGrid.swift in Sources */,
 				E1E8239D28213C1D004F1BD6 /* CardDetailView.swift in Sources */,
