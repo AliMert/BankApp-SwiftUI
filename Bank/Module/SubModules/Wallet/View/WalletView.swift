@@ -107,6 +107,7 @@ struct WalletView: View {
             // MARK: Add Button
             NavigationLink(destination: AddCardView(), isActive: $goToAddCardView) {
                 Button {
+                    UITabBar.hideTabBar()
                     goToAddCardView = true
                 } label: {
                     Image(systemName: "plus")
@@ -135,6 +136,11 @@ struct WalletView: View {
                     showDetailCard: $showDetailCard,
                     animation: animation
                 )
+                .ignoresSafeArea(.container, edges: .bottom)
+                .hideTabBar()
+                .onDisappear {
+                    UITabBar.showTabBar()
+                }
             }
         }
     }

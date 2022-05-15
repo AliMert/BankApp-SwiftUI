@@ -43,6 +43,17 @@ public extension View {
         self
             .frame(maxWidth: . infinity, alignment: .trailing)
     }
-    
+
+    // MARK: Max Width
+    func maxWidth() -> some View {
+        self
+            .frame(maxWidth: . infinity)
+    }
+
+    // MARK: Max Height
+    func maxHeight() -> some View {
+        self
+            .frame(maxHeight: . infinity)
+    }
 }
 
