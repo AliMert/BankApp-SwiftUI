@@ -51,6 +51,7 @@ struct WalletView: View {
                     .rotationEffect(.init(degrees: expandCards ? 45 : .zero))
                     .offset(x: expandCards ? 10 : 15)
                     .opacity(expandCards ? 1 : 0)
+                    .shouldHideTabBar(expandCards ? true : false, animated: true)
                 }
                 .padding(.horizontal, 15)
                 .padding(.bottom, 10)
