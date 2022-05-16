@@ -16,6 +16,12 @@
 		E17AAC12282072B100F159C7 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17AAC11282072B100F159C7 /* View+Extensions.swift */; };
 		E17AAC162820780C00F159C7 /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17AAC152820780C00F159C7 /* WalletView.swift */; };
 		E17AAC182820781E00F159C7 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17AAC172820781E00F159C7 /* Card.swift */; };
+		E18F41FB282946890057864C /* TransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18F41FA282946890057864C /* TransactionsView.swift */; };
+		E18F41FF28299F6D0057864C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18F41FE28299F6D0057864C /* User.swift */; };
+		E18F420128299FD70057864C /* DateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18F420028299FD70057864C /* DateValue.swift */; };
+		E18F42092829B50B0057864C /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18F42082829B50B0057864C /* CustomDatePicker.swift */; };
+		E18F420B2829C3400057864C /* UserTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18F420A2829C3400057864C /* UserTransactionView.swift */; };
+		E1D53AE128318C880089FD3C /* BankLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = E1D53AE028318C880089FD3C /* BankLibrary */; };
 		E1E8239B282135F7004F1BD6 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E8239A282135F7004F1BD6 /* CardView.swift */; };
 		E1E8239D28213C1D004F1BD6 /* CardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E8239C28213C1D004F1BD6 /* CardDetailView.swift */; };
 		E1E823A528213D2F004F1BD6 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E823A428213D2F004F1BD6 /* String+Extensions.swift */; };
@@ -38,6 +44,13 @@
 		E17AAC11282072B100F159C7 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		E17AAC152820780C00F159C7 /* WalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletView.swift; sourceTree = "<group>"; };
 		E17AAC172820781E00F159C7 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		E18F41FA282946890057864C /* TransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsView.swift; sourceTree = "<group>"; };
+		E18F41FE28299F6D0057864C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E18F420028299FD70057864C /* DateValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateValue.swift; sourceTree = "<group>"; };
+		E18F42052829AADE0057864C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E18F42082829B50B0057864C /* CustomDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; };
+		E18F420A2829C3400057864C /* UserTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTransactionView.swift; sourceTree = "<group>"; };
+		E1D53AE3283193780089FD3C /* BankLibrary */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = BankLibrary; sourceTree = "<group>"; };
 		E1E8239A282135F7004F1BD6 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		E1E8239C28213C1D004F1BD6 /* CardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailView.swift; sourceTree = "<group>"; };
 		E1E823A428213D2F004F1BD6 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
@@ -54,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1D53AE128318C880089FD3C /* BankLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,8 +77,10 @@
 		E17AABF72820723900F159C7 = {
 			isa = PBXGroup;
 			children = (
+				E1D53AE3283193780089FD3C /* BankLibrary */,
 				E17AAC022820723900F159C7 /* Bank */,
 				E17AAC012820723900F159C7 /* Products */,
+				E1D53ADF28318C880089FD3C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,10 +95,11 @@
 		E17AAC022820723900F159C7 /* Bank */ = {
 			isa = PBXGroup;
 			children = (
+				E18F42052829AADE0057864C /* Info.plist */,
 				E1E823A728213D83004F1BD6 /* App */,
 				E1E823A228213D12004F1BD6 /* Common */,
 				E17AAC132820779900F159C7 /* Module */,
-				E17AAC072820723D00F159C7 /* Assets.xcassets */,
+				E18F42022829AA2B0057864C /* Resources */,
 				E17AAC092820723D00F159C7 /* Preview Content */,
 			);
 			path = Bank;
@@ -100,9 +117,8 @@
 		E17AAC132820779900F159C7 /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				E17AAC14282077FB00F159C7 /* Model */,
-				E1E823A628213D77004F1BD6 /* View */,
-				E1E823A828213DB1004F1BD6 /* SubModules */,
+				E18F41F92829467E0057864C /* Transactions */,
+				E1E8239E28213CA2004F1BD6 /* Wallet */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -115,9 +131,52 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		E18F41F92829467E0057864C /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				E18F41FD28299F610057864C /* Model */,
+				E18F41FC28299F5C0057864C /* View */,
+			);
+			path = Transactions;
+			sourceTree = "<group>";
+		};
+		E18F41FC28299F5C0057864C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E18F41FA282946890057864C /* TransactionsView.swift */,
+				E18F420A2829C3400057864C /* UserTransactionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E18F41FD28299F610057864C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E18F41FE28299F6D0057864C /* User.swift */,
+				E18F420028299FD70057864C /* DateValue.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E18F42022829AA2B0057864C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E17AAC072820723D00F159C7 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E1D53ADF28318C880089FD3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E1E8239E28213CA2004F1BD6 /* Wallet */ = {
 			isa = PBXGroup;
 			children = (
+				E17AAC14282077FB00F159C7 /* Model */,
 				E1E823A028213CC3004F1BD6 /* View */,
 				E1E823B52821C6A0004F1BD6 /* SubModules */,
 			);
@@ -159,34 +218,20 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		E1E823A628213D77004F1BD6 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				E17AAC052820723900F159C7 /* ContentView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		E1E823A728213D83004F1BD6 /* App */ = {
 			isa = PBXGroup;
 			children = (
 				E17AAC032820723900F159C7 /* BankApp.swift */,
+				E17AAC052820723900F159C7 /* ContentView.swift */,
 			);
 			path = App;
-			sourceTree = "<group>";
-		};
-		E1E823A828213DB1004F1BD6 /* SubModules */ = {
-			isa = PBXGroup;
-			children = (
-				E1E8239E28213CA2004F1BD6 /* Wallet */,
-			);
-			path = SubModules;
 			sourceTree = "<group>";
 		};
 		E1E823A928213DDB004F1BD6 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				E1E8239A282135F7004F1BD6 /* CardView.swift */,
+				E18F42082829B50B0057864C /* CustomDatePicker.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -261,6 +306,9 @@
 			dependencies = (
 			);
 			name = Bank;
+			packageProductDependencies = (
+				E1D53AE028318C880089FD3C /* BankLibrary */,
+			);
 			productName = Bank;
 			productReference = E17AAC002820723900F159C7 /* Bank.app */;
 			productType = "com.apple.product-type.application";
@@ -315,19 +363,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E18F42092829B50B0057864C /* CustomDatePicker.swift in Sources */,
 				E17AAC062820723900F159C7 /* ContentView.swift in Sources */,
 				E17AAC162820780C00F159C7 /* WalletView.swift in Sources */,
+				E18F41FB282946890057864C /* TransactionsView.swift in Sources */,
 				E17AAC182820781E00F159C7 /* Card.swift in Sources */,
 				E1E823B92821C728004F1BD6 /* ColorGrid.swift in Sources */,
 				E1E8239D28213C1D004F1BD6 /* CardDetailView.swift in Sources */,
+				E18F420B2829C3400057864C /* UserTransactionView.swift in Sources */,
 				E1E823B228217A41004F1BD6 /* ExpenseView.swift in Sources */,
 				E1E823B02821795C004F1BD6 /* Expense.swift in Sources */,
+				E18F420128299FD70057864C /* DateValue.swift in Sources */,
 				E1E823BB2821C7BC004F1BD6 /* AddCardView.swift in Sources */,
 				E172A09F28231EC10086FD09 /* CreditCardView.swift in Sources */,
 				E1E823AC28213F6F004F1BD6 /* MockData.swift in Sources */,
 				E1E823A528213D2F004F1BD6 /* String+Extensions.swift in Sources */,
 				E17AAC12282072B100F159C7 /* View+Extensions.swift in Sources */,
 				E172A0A128233A880086FD09 /* GridColoredCardView.swift in Sources */,
+				E18F41FF28299F6D0057864C /* User.swift in Sources */,
 				E1E823BD2821E73E004F1BD6 /* CustomCorner.swift in Sources */,
 				E1E8239B282135F7004F1BD6 /* CardView.swift in Sources */,
 				E17AAC042820723900F159C7 /* BankApp.swift in Sources */,
@@ -464,9 +517,9 @@
 				DEVELOPMENT_TEAM = R38K25C8UB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Bank/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -493,9 +546,9 @@
 				DEVELOPMENT_TEAM = R38K25C8UB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Bank/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -533,6 +586,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E1D53AE028318C880089FD3C /* BankLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BankLibrary;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E17AABF82820723900F159C7 /* Project object */;
 }
