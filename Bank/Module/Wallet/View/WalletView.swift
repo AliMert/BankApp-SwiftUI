@@ -138,10 +138,6 @@ struct WalletView: View {
                     animation: animation
                 )
                 .ignoresSafeArea(.container, edges: .bottom)
-                .hideTabBar()
-                .onDisappear {
-                    UITabBar.showTabBar()
-                }
             }
         }
     }

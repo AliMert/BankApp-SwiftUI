@@ -21,12 +21,12 @@ struct TransactionsView: View {
     // Sample users data
     private let users: [User] = [
         User(name: "Ali Mert", image: "user1", type: "Sent", amount: "-$120", color: .red),
-        User(name: "Jessica", image: "user3", type: "Received", amount: "+$35", color: .green),
-        User(name: "Jenna", image: "user2", type: "Rejected", amount: "-$20", color: Color(.label)),
-        User(name: "Jenna", image: "user2", type: "Rejected", amount: "-$20", color: Color(.label)),
-        User(name: "Jenna", image: "user2", type: "Rejected", amount: "-$20", color: Color(.label)),
-        User(name: "Jenna", image: "user2", type: "Rejected", amount: "-$20", color: Color(.label)),
-        User(name: "Rebecca", image: "user4", type: "Received", amount: "+$40", color: .green)
+        User(name: "Daniel", image: "user3", type: "Received", amount: "+$35", color: .green),
+        User(name: "David", image: "user2", type: "Rejected", amount: "-$20", color: Color(.label)),
+        User(name: "David", image: "user2", type: "Rejected", amount: "-$20", color: Color(.label)),
+        User(name: "David", image: "user2", type: "Rejected", amount: "-$20", color: Color(.label)),
+        User(name: "David", image: "user2", type: "Rejected", amount: "-$20", color: Color(.label)),
+        User(name: "Matt", image: "user4", type: "Received", amount: "+$40", color: .green)
     ]
 
     var body: some View {
