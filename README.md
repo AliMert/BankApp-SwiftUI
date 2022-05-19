@@ -3,14 +3,14 @@
 A SwiftUI demo project.
 
 <p>
-'<t>HidableTabView</t>' package is used for hiding and showing TabView wwith animation. <br>
+'<t>HidableTabView</t>' package is used for hiding and showing TabView with animation. <br>
 '<t>HideableTabView</t>' framework can be added to your project as a package thorught SPM. <br>
 </p>
 
 <p>
 To get more info about the package:
 <ul>
-    <li> https://gitlab.com/AliMertOzhayta/hidabletabview-swiftui/ </li>
+    <li> https://github.com/AliMert/HidableTabView-SwiftUI </li>
 </ul>
 </p>
 <br>
@@ -66,7 +66,12 @@ To get more info about the package:
 </th>
   </tr>
   <tr>
-     <td colspan="5"> ![Demo Link](screenshots/demo.mp4) </td>
+     <td colspan="5">
+         
+
+https://user-images.githubusercontent.com/37440706/169293064-30dc5ef6-959f-4ea6-99d1-497d2c058af0.mp4
+
+
   </tr>
 </tbody>
 </table>
